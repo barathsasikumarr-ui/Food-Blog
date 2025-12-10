@@ -1,5 +1,9 @@
 const express=require("express")
 const app=express()
+// Add this route for the root URL
+app.get('/', (req, res) => {
+    res.send("Welcome to my Food Blog Backend! 🚀");
+});
 const dotenv=require("dotenv").config()
 const connectDb=require("./config/connectionDB")
 const cors=require("cors")
