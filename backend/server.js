@@ -1,5 +1,10 @@
 const express=require("express")
 const app=express()
+// This tells the server what to do when the main page is visited
+app.get('/', (req, res) => {
+    res.send("Server is ready! The Food Blog backend is running.");
+});
+
 const dotenv=require("dotenv").config()
 const connectDb=require("./config/connectionDB")
 const cors=require("cors")
