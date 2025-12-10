@@ -19,7 +19,7 @@ export default function RecipeDetails() {
             <div className='recipe-details'>
                 <div className='left'>
                     {/* 3. Display the Recipe Image */}
-                    <img src={`http://localhost:5000/images/${recipe.coverImage}`} width="100%" alt={recipe.title} />
+                    <img src={`https://food-blog-8a9a.onrender.com/images/${recipe.coverImage}`} width="100%" alt={recipe.title} />
                 </div>
                 
                 <div className='right'>
